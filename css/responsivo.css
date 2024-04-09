@@ -1,0 +1,84 @@
+@media(max-width: 1280px) {
+    .cabecalho {
+        padding: 30px;
+    }
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        gap: 30px;
+    }
+    .home .informacoes {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .projetos .container-projetos {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    .home .informacoes h1 {
+        font-size: 30px;
+    }
+    .home .informacoes p {
+        font-size: 16px;
+    }
+    .home .container-foto img {
+        max-width: 320px;
+    }
+    .projetos {
+        padding: 30px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os itens no início do contêiner */
+    background-color: #d3b67f; /* Cor de fundo vibrante (laranja) */
+    padding: 20px; /* Adiciona um espaçamento interno para separar os projetos do fundo */
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #047474; /* Cor da borda branca para contraste */
+}
+
+.project h3 {
+    margin-bottom: 2px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #047474;
+    color: rgb(17, 15, 15);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-to-top:hover {
+    background-color: #024141;
+}
+.veja {
+    color: blue;
+}
