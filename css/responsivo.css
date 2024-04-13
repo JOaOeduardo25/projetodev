@@ -44,7 +44,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start; /* Alinha os itens no início do contêiner */
-    background-color: #d3b67f; /* Cor de fundo vibrante (laranja) */
     padding: 20px; /* Adiciona um espaçamento interno para separar os projetos do fundo */
 }
 
@@ -81,4 +80,15 @@ body {
 }
 .veja {
     color: blue;
+}
+@media screen and (max-width: 768px) {
+    .project {
+        width: calc(50% - 20px); /* Exibir dois projetos por linha em telas menores que 768px */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .project {
+        width: calc(100% - 20px); /* Exibir um projeto por linha em telas menores que 425px */
+    }
 }

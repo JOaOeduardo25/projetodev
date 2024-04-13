@@ -7,7 +7,7 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,126,1) 85%);
+    background: linear-gradient(90deg, rgb(90, 75, 53) 0%, rgb(122, 252, 70) 85%);
     background-size: 120% 120%;
 }
 
@@ -100,13 +100,17 @@ body {
 }
 
 .home .container-foto .foto {
-    max-width: 450px;
+    width: 300px; /* Defina a largura desejada */
+    height: 300px; /* Defina a altura desejada */
     border-radius: 50%;
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do contêiner */
 }
 
-.home  .container-foto img {
+.home .container-foto img {
     width: 100%;
-    border-radius: 50%;
+    height: auto;
+    display: block;
+    margin-top: -50px; /* Ajuste para cortar a imagem da cintura para cima */
 }
 
 .home .foto.sombra-interna {

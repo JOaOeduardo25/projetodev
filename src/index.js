@@ -16,9 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             projetoInativo.classList.add('ativo');
         });
     }
-});
-document.addEventListener('DOMContentLoaded', function() {
-    $('p:contains("Veja:")').html(function (_, html) {
-        return html.replace(/(Veja:)/g, '<span class="veja">$1</span>');
-    });
+
+    // Adiciona a classe 'veja' aos parágrafos que contêm 'Veja:'
+    $('p:contains("Veja:")').addClass('veja');
 });
